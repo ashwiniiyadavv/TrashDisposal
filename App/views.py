@@ -30,3 +30,11 @@ type = input("Enter type of waste (dry, wet, hazardeous): ")
 
 is_recylable = check_recyclable(category,type)
 suggest(is_recylable,category)
+
+# Create your views here.
+def index (request):
+    if request.method=="GET":
+        return render(request,'index.html')
+    elif request.method=="POST":
+        return render(request,'response.html')
+
