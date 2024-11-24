@@ -1,0 +1,10 @@
+{% extends 'Basic.html' %}
+{% block head %}
+<title> Trash Disposal</title>
+{% endblock %}
+{% block body %}
+<form action="{% url 'home' %}" method="POST">
+    <input type="text" placeholder="Describe the waste">
+    <button type="submit">Submit </button>
+</form>
+{% endblock %}
